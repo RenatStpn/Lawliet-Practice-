@@ -1,0 +1,58 @@
+.achievements {
+    background-image: url('./assets/images/stats.png');
+}
+.achievements__content {
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+.achievements__header {
+    text-align: center;
+}
+.achievements__title {
+    margin-top: 53px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+}
+.achievements__subtitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-top: 8px;
+}
+.achievements__indicators {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    margin-bottom: 55px;
+}
+.achievements__part:not(:last-of-type) {
+    border-right: 1px solid rgba(255,255,255,.4);
+    margin-right: 15px;
+}
+.achievements__part:first-of-type {
+    margin-left: 142.5px;
+}
+.achievements__number {
+    width: 255px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+}
+.achievements__label {
+    width: 255px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}

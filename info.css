@@ -1,0 +1,65 @@
+.info {
+    background: #0F6E8C;
+    position: relative;
+}
+.lawliet  {
+    margin-top: 73px;
+    display: flex;
+    align-items:center;
+}
+.lawliet__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    color: #F9F8F9;
+}
+.lawliet__sign {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 12px;
+    color: #0F6E8C;
+    background: #fff;
+    padding: 27px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.info__tab {
+    position: relative;
+    bottom: 66px;
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    column-gap: 30px;
+    row-gap: 12px;
+    justify-content: end;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #EEEFF4;
+    margin-bottom: 51px;
+
+}
+.info__tab-el:hover{
+    color: steelblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.info__tab-el:nth-child(-n+3) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #F4F5F7;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: unset;
+}

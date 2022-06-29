@@ -1,0 +1,42 @@
+footer {
+    position: relative;
+    background: #05546D;
+    mix-blend-mode: normal;
+}
+.rights__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    padding-top: 24px;
+}
+.rights__desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #D9DBE1;
+}
+.rights__icons  {
+    display: flex;
+    flex-direction: row;
+}
+.right__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5.6px;
+    color: #fff;
+    background-color: rgba(249, 248, 249, .1);
+    border-radius: 100%;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.right__icon:last-child {
+    margin-right: 0;
+}
+img{
+    object-fit: contain;
+}

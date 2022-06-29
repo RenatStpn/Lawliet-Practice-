@@ -1,0 +1,58 @@
+/* ABOUTUS */
+
+.aboutus {
+  background: var(--color-ocean-light);
+}
+
+.aboutus__content {
+  padding: 12.6rem 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+
+}
+.aboutus__info {
+  max-width: 38.4rem;
+  margin-right: 5.2rem;
+  margin-top: 4.8rem;
+}
+.aboutus__title {
+  font-family: var(--font-poppins);
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  letter-spacing: 0.3rem;
+}
+.aboutus__subtitle {
+  font-family: var(--font-poppins);
+  font-size: 2rem;
+  line-height: 3.6rem;
+  color: var(--color-grey-5);
+  margin-top: 4rem;
+}
+.aboutus__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25.6rem, 1fr));
+  grid-template-rows: repeat(2, minmax(25rem, 1fr));
+  grid-gap: 2.8rem;
+}
+.aboutus__grid--item {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border-radius: 0.8rem;
+  box-shadow: 0px 18px 58px 16px #0000000f;
+}
+.aboutus__grid--title {
+  font-family: var(--font-poppins);
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin-top: 1.8rem;
+}
+.aboutus__grid--content {
+  margin-top: 1rem;
+  font-size: var(--font-jakarta);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-grey-5);
+}

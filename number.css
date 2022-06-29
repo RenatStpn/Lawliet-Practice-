@@ -1,0 +1,67 @@
+.number {
+    background-color: #ffff;
+    position: relative;
+}
+.number__question {
+    margin-top: 37px;
+}
+.number__question-header {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #2D2F30;
+    display: flex;
+    justify-content: start;
+}
+.number__description {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #4F4F4F;
+    margin-top: 15px;
+    margin-right: 279px;
+    margin-bottom: 45px;
+    
+}
+.client__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    object-fit: contain;
+    border-radius: 0px 0px 0px 40px;
+}
+.number__button {
+    background: #0F6E8C;
+    display: flex;
+    flex-direction: row;
+    padding: 14px 37px;
+    border-radius: 8px;
+    width: 219px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.phone__description {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #F9F8F9;
+}
+.photo__sign-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17.3px;
+}
+.photo__sign {
+    width: 25.3px;
+    height: 25.3px;
+    object-fit: contain;
+}
