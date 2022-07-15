@@ -1,90 +1,129 @@
 .testimonials {
-    background: #F4FBFF;
+  background: #f4fbff;
+}
+.testimonials__content {
+  padding: 6.1rem 16.5rem 9.1rem;
 }
 .testimonials__header {
-    display: flex;
-    justify-content: center;
-    margin-top: 61px;
-    font-family: 'Playfair Display';
-    font-weight: 700;
-    font-size: 48px;
-    letter-spacing: 0.5px;
-    line-height: 64px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.5px;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #2D2F30;
 }
 .testimonials__comments {
-    display: flex;
-    flex-direction: row;
-}
-.testimonials__comments-part {
-    margin-top: 51px;
-    margin-bottom: 28px;
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 540px;
-}
-.testimonials__comments-part:first-of-type {
-    margin-right: 30px;
-}
-.testimonials__comments-header {
-    text-align: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    width: 100%;
-    margin-top: 32px;
-    margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
 }
 .testimonials__comments-text {
-    /* position: relative; */
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.5px;
-    color: #4F4F4F;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px 0px #29292a12;
+  width: 54rem;
+  min-height: 22rem;
+  margin: 5.1rem auto 3rem;
+  padding: 3.2rem ;
 }
-.testimonials__comments-part:after {
-    content: "";
-    width: 0; 
-    height: 0; 
-    border-left: 14.8px solid transparent;
-    border-right: 14.8px solid transparent;
-    border-top: 24px solid #ffff;
-    position: relative;
-    left: 258px;
-    top: 32px;
+.testimonials__comments-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 8px;
 }
+.testimonials__comments-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #4f4f4f;
+}
+/* .testimonials__comments-part {
+  flex-shrink: 7;
+} */
+/* .testimonials__comments-part:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 14.8px solid transparent;
+  border-right: 14.8px solid transparent;
+  border-top: 24px solid #ffff;
+  position: relative;
+  left: 258px;
+  top: 32px;
+  box-shadow: 0px 10px 20px 0px #29292a12;
+} */
 .testimonials__clients {
-    font-family: 'Inter';
+  font-family: "Inter";
 }
 .testimonials__person {
-    display: flex;
-    flex-direction: row;
-}
-.testimonials__person:first-of-type {
-    margin-left: 160px;
-}
-.testimonials__person:nth-of-type(2) {
-    margin-left: 361px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .person__name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
 }
 .person__job-title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 .person__photo {
-    height: 56px;
-    width: 56px;
-    background: url('./assets/images/ava.jpeg');
-    border-radius: 56px;
-    object-fit: cover;
-    margin-right: 16px;
-    margin-bottom: 91px;
+  max-height: 56px;
+  max-width: 56px;
+  background: url("./assets/images/ava.jpeg");
+  border-radius: 56px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+@media(max-width: 768px) {
+  .testimonials__header {
+    line-height: 5rem;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+}
+@media(max-width: 1110px) { 
+   .testimonials__comments-text {
+    width: 45rem;
+  }
+  .testimonials__comments-descr {
+    letter-spacing: 0.4px;
+  }
+} 
+@media(max-width: 1000px) {
+  .testimonials__content {
+    padding: 5rem 12rem 7rem ;
+  }
+  .testimonials__comments-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials__comments {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .testimonials__comments-text {
+    width: 35rem;
+    margin: 3rem;
+  }
+} 
+@media(max-width: 375px) {
+  .testimonials__comments-text {
+    width: 30rem;
+    margin: 2.5rem;
+  }
 }

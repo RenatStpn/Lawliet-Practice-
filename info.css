@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 .info__tab-el:nth-child(-n+3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -62,4 +66,100 @@
     margin-bottom: 20px;
     text-decoration: none;
     cursor: unset;
+}
+/* SLIDESHOW ELEMENTS. ORIGIN: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 2rem  4rem;
+}
+.arrow__logo {
+    display: none;
+    width: 1.5rem;
+    height: 3.5rem;
+}
+.prev {
+    transform: rotate(180deg);
+}
+.small__tab-col {
+    display: none;
+    width: 15rem
+}
+.small__tab-el {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #EEEFF4;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.small__tab-hed {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #F4F5F7;
+    margin-bottom: 1.5rem;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+.prev, .next {
+    cursor: pointer;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media(max-width: 830px){
+    .info__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .lawliet {
+        margin-bottom: 3rem;
+    }
+    .info__tab {
+        bottom: 0;
+        justify-content: center;
+        column-gap: 0;
+        row-gap: .8rem;
+    } 
+}
+@media(max-width: 600px) {
+    .info__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .lawliet {
+        margin-top: 4rem;
+        margin-bottom: .5rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .info__tab {
+        display: none;
+    }
+    .arrow__logo {
+        display: block;
+    }
 }
