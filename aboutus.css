@@ -9,19 +9,39 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-
+}
+@media (max-width: 768px) {
+  .aboutus__content {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
 }
 .aboutus__info {
   max-width: 38.4rem;
   margin-right: 5.2rem;
   margin-top: 4.8rem;
 }
+@media (max-width: 768px) {
+  .aboutus__info {
+    text-align: center;
+    margin: auto;
+  }
+}
+
 .aboutus__title {
   font-family: var(--font-poppins);
+  line-height: 5rem;
   font-size: 4.8rem;
   line-height: 6.4rem;
   letter-spacing: 0.3rem;
 }
+@media (max-width: 425px) {
+  .aboutus__title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
 .aboutus__subtitle {
   font-family: var(--font-poppins);
   font-size: 2rem;
@@ -29,11 +49,26 @@
   color: var(--color-grey-5);
   margin-top: 4rem;
 }
+@media (max-width: 768px) {
+  .aboutus__subtitle {
+     margin: 2rem 0;
+  }
+}
+@media (max-width: 425px) {
+  .aboutus__subtitle {
+    font-size: 1.8rem;
+  }
+}
 .aboutus__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(25.6rem, 1fr));
   grid-template-rows: repeat(2, minmax(25rem, 1fr));
   grid-gap: 2.8rem;
+}
+@media (max-width: 560px) {
+  .aboutus__grid {
+    grid-template-columns: 1fr;
+  }
 }
 .aboutus__grid--item {
   padding: 2.4rem;

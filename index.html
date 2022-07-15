@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="hero.css">
 		<link rel="stylesheet" href="aboutus.css">
 		<link rel="stylesheet" href="achievements.css">
-		<link rel="stylesheet" href="testimonials.css">
+		 <link rel="stylesheet" href="testimonials.css">
 		<link rel="stylesheet" href="number.css">
 		<link rel="stylesheet" href="info.css">
 		<link rel="stylesheet" href="footer.css">
@@ -38,6 +38,14 @@
 					<li class="header__list-item"><a href="http://">TERM</a></li>
 				</ul>
 				<div class="header__search-icon"><img src="./assets/icons/search.png" alt="search glass"></div>
+				<div class="header__menu-icon"><img src="./assets/icons/menu.png" alt="menu icon"></div>
+				<div class="header__menu">
+					<li class="header__menu-item"><span class="close-icon"></span></li>
+					<li class="header__menu-item"><a href="http://">CONTACTS</a></li>
+					<li class="header__menu-item"><a href="http://">TESTIMONIALS</a></li>
+					<li class="header__menu-item"><a href="http://">ABOUT</a></li>
+					<li class="header__menu-item"><a href="http://">TERM</a></li>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -68,7 +76,7 @@
 				<div class="aboutus__content">
 					<div class="aboutus__info">
 						<h2 class="aboutus__title">Why do we help with legalization?</h2>
-						<div class="p aboutus__subtitle">We are here for UMKM in Indonesia to carry out the legalization
+						<div class="aboutus__subtitle">We are here for UMKM in Indonesia to carry out the legalization
 							process, which is sometimes complicated.</div>
 					</div>
 					<div class="aboutus__grid">
@@ -172,43 +180,44 @@
 					<div class="testimonials__header">
 						Clients Testimonial
 					</div>
-
 					<div class="testimonials__comments">
 						<div class="testimonials__comments-part">
-							<div class="testimonials__comments-header">
-								Incredible Experience
-							</div>
 							<div class="testimonials__comments-text">
-								We had an incredible experience working with Landify and were impressed
-								they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.
+								<div class="testimonials__comments-header">
+									Incredible Experience
+								</div>
+								<div class="testimonials__comments-descr">
+									We had an incredible experience working with Landify and were impressed
+									they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.
+								</div>
 							</div>
-							<div class="triangle"></div>
+							<div class="testimonials__person">
+								<img class="person__photo" src="./assets/images/ava.jpeg" alt="person photo">
+								<div class="person__description">
+									<div class="person__name">Anya Tailor Joy</div>
+									<div class="person__job-title">CEO, SF Industires</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="testimonials__comments-part">
-							<div class="testimonials__comments-header">
-								Dependable, Responsive, Professional Partner
-							</div>
 							<div class="testimonials__comments-text">
-								Fermin Apps has collaborated with Landify team for several projects 
-								such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. 
+								<div class="testimonials__comments-header">
+									Dependable, Responsive, Professional Partner
+								</div>
+								<div class="testimonials__comments-descr">
+									Fermin Apps has collaborated with Landify team for several projects 
+									such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. 
+								</div>
+							</div>
+							<div class="testimonials__person">
+								<img class="person__photo" src="./assets/images/ava.jpeg" alt="person photo">
+								<div class="person__description">
+									<div class="person__name">Sri Alam</div>
+									<div class="person__job-title">CEO, Membagongkan GROUP</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="testimonials__clients">
-						<div class="testimonials__person">
-							<img class="person__photo" src="./assets/images/ava.jpeg" alt="person photo">
-							<div class="person__description">
-								<div class="person__name">Anya Tailor Joy</div>
-								<div class="person__job-title">CEO, SF Industires</div>
-							</div>
-						<div class="testimonials__person">
-							<img class="person__photo" src="./assets/images/ava.jpeg" alt="person photo">
-							<div class="person__description">
-								<div class="person__name">Sri Alam</div>
-								<div class="person__job-title">CEO, Membagongkan GROUP</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -252,9 +261,12 @@
 						</div>
 					</div>
 					<div class="info__tab">
-						<div class="info__tab-el">Product</div>
-						<div class="info__tab-el">Company</div>
-						<div class="info__tab-el">Support</div>
+						<div class="info__tab-el">Product
+						</div>
+						<div class="info__tab-el">Company
+						</div>
+						<div class="info__tab-el">Support
+						</div>
 						<div class="info__tab-el">Overview</div>
 						<div class="info__tab-el">About</div>
 						<div class="info__tab-el">Help Center</div>
@@ -271,8 +283,55 @@
 						<div class="info__tab-el">Partners</div>
 						<div class="info__tab-el">Status</div>
 					</div>
+					<div class="small__tab">
+						<div class="arrows">
+							<a class="prev" onclick="plusSlides(-1)">
+								<img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo">
+							</a>
+							<div class="small__tab-col fade">
+								<div class="small__tab-hed">
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+									Product
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+								</div>
+								<div class="small__tab-el">Overview</div>
+								<div class="small__tab-el">About</div>
+								<div class="small__tab-el">Help Center</div>
+								<div class="small__tab-el">Features</div>
+								<div class="small__tab-el">Press</div>
+							</div>
+							<div class="small__tab-col fade">
+								<div class="small__tab-hed">
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+									Company
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+								</div>
+								<div class="small__tab-el">Terms of service</div>
+								<div class="small__tab-el">Tutorials</div>
+								<div class="small__tab-el">Careers</div>
+								<div class="small__tab-el">Legal</div>
+								<div class="small__tab-el">Pricing</div>
+							</div>
+							<div class="small__tab-col fade">
+								<div class="small__tab-hed">
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+									Support
+									<!-- <img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo"> -->
+								</div>
+								<div class="small__tab-el">Contact</div>
+								<div class="small__tab-el">Privacy Policy</div>
+								<div class="small__tab-el">Releases</div>
+								<div class="small__tab-el">Partners</div>
+								<div class="small__tab-el">Status</div>
+							</div>
+							<a class="next" onclick="plusSlides(1)">
+								<img src="./assets/icons/right-arrow.png" alt="" class="arrow__logo">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
+						
 		</section>
 		<footer>
 			<div class="wrapper">
@@ -285,19 +344,18 @@
 							<img src="./assets/icons/insta.png" alt="insta" >
 						</div>
 						<div class="right__icon">
-							<img  src="./assets/icons/ball.png" alt="ball" >
+							<img src="./assets/icons/ball.png" alt="ball" >
 						</div>						
 						<div class="right__icon">
-							<img  src="./assets/icons/twitter.png" alt="twitter" >
+							<img src="./assets/icons/twitter.png" alt="twitter" >
 						</div>						
 						<div class="right__icon">
-							<img  src="./assets/icons/youtube.png" alt="youtube" >
+							<img src="./assets/icons/youtube.png" alt="youtube" >
 						</div>
-						
-						
 					</div>
 				</div>
 			</div>
 		</footer>
-</body>
+	</body>
+	<script src="animations.js"></script>
 </html>
